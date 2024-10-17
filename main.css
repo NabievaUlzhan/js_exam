@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding-top: 41px;
+}
+header{
+    width: 1728px;
+    margin: auto;
+}
+.header__top{
+    width: 100%;
+    height: 112px;
+    display: flex;
+    align-items: center;
+} 
+.header__logo{
+    margin-left: 50px;
+}  
+.header__top-list1{
+    width: 700px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 15%;
+}
+.header__top-list2{
+    width: 450px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30%;
+    input{
+        width: 250px;
+        height: 47px;
+        background: black;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        font-size: 22px;
+        font-weight: 600;
+        padding-left: 10px;
+    }
+}
+h1{
+    line-height: 70px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 50px auto;
+    width: 450px;
+}
+.header__select{
+    width: 1500px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 80px;
+    select{
+        width: 250px;
+        height: 47px;
+        background: black;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    button{
+        width: 250px;
+        height: 47px;
+        background: rgba(229, 9, 20, 1);
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 22px;
+        font-weight: 600;
+    }
+}
+
+.header__movies-style{
+    width: 1728px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: auto;
+}
+.header__movies-one{
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+.header__movies-poster{
+    width: 250px;
+    height: 300px;
+}
+
+.header__mylist{
+    margin-bottom: 150px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 600;
+    width: 100px;
+    margin: 100px auto;
+}
+
+
+.hide{
+    display: block;
+}
+
+
+
+@media screen and (max-width: 375px){
+    body{
+        padding-top: 30px;
+    }
+    header{
+        width: 375px;
+    }
+    .header__top{
+        width: 375px;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    } 
+    .header__logo{
+        width: 120px;
+        height: 50px;
+    }
+    .header__top-list1{
+        display: none;
+    }
+    .header__top-list2{
+        width: 200px;
+        height: 47px;
+        padding-left: 55px;
+        margin-top: 20px;
+        input{
+            width: 150px;
+            height: 20px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    h1{
+        line-height: 30px;
+        font-size: 30px;
+        width: 250px;
+        text-align: center;
+    }
+    .header__select{
+        width: 375px;
+        height: 200px;
+        flex-direction: column;
+        select{
+            width: 180px;
+            height: 20px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        h2{
+            font-size: 18px;
+        }
+        button{
+            width: 180px;
+            height: 30px;
+            font-size: 18px;
+        }
+    }
+    .header__movies{
+        width: 300px;
+        
+    }
+    .header__movies-poster{
+        width: 100px;
+        height: 200px;
+    }
+    .header__movies-one{
+        width: 100px;
+        height: 200px;
+        p{
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+    .header__movies-style{
+        width: 300px;
+    }
+    h3{
+        font-size: 25px;
+        width: 80px;
+        margin: 50px auto;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header__top">
+            <img class="header__logo" src="images/netflixLogo.svg" alt="">
+            <nav>
+                <ul class="header__top-list1">
+                    <a>Home</a>
+                    <a>TV  Shows</a>
+                    <a>New & Popular</a>
+                    <a>MyList</a>
+                    <a>Browse by Languages</a>
+                </ul>
+            </nav>
+            <ul class="header__top-list2">
+                <input type="text" placeholder="movie name" id="search__name">
+                <li><img id="search__link" src="images/Search.svg" alt=""></li>
+            </ul>
+        </div>
+        <h1>Search needful movie</h1>
+        <div class="header__select">
+            <h2>Select Your Preference</h2>
+            <select name="Movie Type" class="type">
+                <option value="series">Series</option>
+                <option value="movie">Movie</option>
+                <option value="cartoon">Cartoon</option>
+            </select>
+            <select name="Genres" class="genre">
+                <option value="музыка">music</option>
+                <option value="документальный">documentary</option>
+                <option value="детский">childish</option>
+                <option value="короткометражка">short film</option>
+                <option value="мелодрама">melodrama</option>
+                <option value="комедия">comedy</option>
+                <option value="драма">drama</option>
+                <option value="боевик">action</option>
+                <option value="триллер">thriller</option>
+                <option value="детектив">detective</option>
+                <option value="фантастика">science fiction</option>
+                <option value="фэнтези">fantasy</option>
+                <option value="приключения">adventure</option>
+                <option value="ужасы">horror</option>
+                <option value="аниме">anime</option>
+                <option value="спорт">sport</option>
+                <option value="биография">biography</option>
+                <option value="криминал">criminal</option>
+                <option value="военный">war</option>
+                <option value="семейный">family</option>
+            </select>
+            <h2>Sort  by</h2>
+            <select name="Age Rating" class="age">
+                <option value="12">12</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="null">no</option>
+                <option value="6">6</option>
+            </select>
+            <button class="header__select-search">Search</button>
+        </div>
+        <div class="header__movies header__movies-style">
+        </div>
+        <h3>MyList</h3>
+        <div class="header__mylist header__movies-style">
+        </div>
+    </header>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
